@@ -1,0 +1,40 @@
+body {
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+
+header {
+  z-index: 0;
+}
+
+.link_size {
+  font-size: 18px;
+}
+
+.link_navbar {
+  border: 2px solid #FF7600;
+  color: #FF7600 !important;
+  height: 51px;
+  transition: 0.5s;
+}
+
+.link_navbar:hover {
+  background-color: #FF7600;
+  color: white !important;
+}
+
+.li_hover:hover {
+  color: #FF7600 !important;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  top: 12px;
+  right: -12px;
+  transform: rotate(0);
+  transition: 0.3s;
+}
+
+.rotate180::after {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=index.css.map */
