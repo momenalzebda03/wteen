@@ -30,7 +30,7 @@ header {
 .dropdown-toggle::after {
   position: absolute;
   top: 12px;
-  right: -12px;
+  right: -20px;
   transform: rotate(0);
   transition: 0.3s;
 }
@@ -40,6 +40,49 @@ header {
 }
 
 .dropdown-menu {
-  left: 100%;
-  top: -10px;
+  top: 82px !important;
+}
+
+.dropdown_left {
+  left: 52.5% !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 transparent;
+}
+
+@media (max-width: 990px) {
+  .image_logo {
+    width: 106px;
+    height: 31.59px;
+  }
+  .dropdown-toggle::after {
+    content: url("/images/page_image_all/images_navbar/icon_mobile.svg");
+    top: 0;
+    border-top: 0 solid;
+    right: 20px;
+  }
+  .rotate180::after {
+    transform: rotate(90deg);
+  }
+  .link_navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .li_hover:hover {
+    background-color: rgba(245, 178, 53, 0.2039215686);
+  }
+  .li_hover:hover {
+    color: black !important;
+  }
+  .ul_container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .div_betweenwidth {
+    width: 100%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.096);
+  }
 }/*# sourceMappingURL=index.css.map */

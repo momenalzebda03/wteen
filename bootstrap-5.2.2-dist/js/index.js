@@ -13,4 +13,20 @@ $(document).ready(function () {
       $(".navbarDropdown").removeClass("rotate180");
     }
   });
+  var boolen = true;
+  $("#menu").click(function () {
+    if (boolen) {
+      $("#image_menu").attr(
+        "src",
+        "images/page_image_all/images_navbar/icon_close.svg"
+      );
+      boolen = false;
+    } else {
+      $("#image_menu").attr(
+        "src",
+        "images/page_image_all/images_navbar/icon_menu.svg"
+      );
+      boolen = true;
+    }
+  });
 });
