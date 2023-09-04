@@ -37,4 +37,9 @@ header {
 
 .rotate180::after {
   transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  left: 100%;
+  top: -10px;
 }/*# sourceMappingURL=index.css.map */
