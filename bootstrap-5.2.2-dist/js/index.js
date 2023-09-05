@@ -7,14 +7,14 @@ $(document).ready(function () {
       $(".navbarDropdown").removeClass("rotate180");
     }
   });
-  $(document).on("click", function (e) {
+  $(document).on("click", (e) => {
     if (!$(e.target).hasClass("navbarDropdown")) {
       $(".navbarDropdown").addClass("color_black");
       $(".navbarDropdown").removeClass("rotate180");
     }
   });
   var boolen = true;
-  $("#menu").click(function () {
+  $("#menu").click(() => {
     if (boolen) {
       $("#image_menu").attr(
         "src",
@@ -28,5 +28,49 @@ $(document).ready(function () {
       );
       boolen = true;
     }
+  });
+
+  $(".image_network").each(function (index) {
+    var topPosition = (4 - index) * 10 + -40;
+    $(this).css("top", topPosition + "px");
+    var rightPosition = index * -10 + 410;
+    $(this).css("right", rightPosition + "px");
+  });
+
+  $("#icon_top").click(() => {
+    window.scrollTo({
+      top: 650,
+      behavior: "smooth",
+    });
+  });
+
+  $(".image_column").each(function () {
+    var firstImage = $(this).find(".hover_why#firstImage");
+    var lastImage = $(this).find(".hover_why#lastImage");
+
+    $(this).hover(
+      function () {
+        firstImage.hide();
+        lastImage.show();
+      },
+      function () {
+        firstImage.show();
+        lastImage.hide();
+      }
+    );
+  });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      1000: {
+        items: 5,
+      },
+    },
   });
 });

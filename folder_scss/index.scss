@@ -6,33 +6,123 @@ body {
     text-transform: capitalize;
 }
 
-// end everyone
-// start navbar
-header {
-    z-index: 0;
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.link_size {
+::-webkit-scrollbar-thumb {
+    background: $color_blue;
+}
+
+.button_width {
+    width: 235px;
+    height: 69px;
+    color: $color_blue;
+    background-color: $color_white;
+
+    .image_hover::after {
+        content: url("/images/page_home/images_main/arraow_button_blue.svg");
+        transition: 0.5s;
+    }
+
+    .image_hover::before {
+        background-color: $color_blue;
+        transition: 0.5s;
+    }
+}
+
+.image_hover::after {
+    position: absolute;
+    top: -7px;
+    right: 25px;
+}
+
+.image_hover::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.button_orange {
+    color: $color_white;
+    background-color: $color_orange;
+
+    .image_hover::after {
+        content: url("/images/page_home/images_main/arraow_button_oragne.svg");
+        transition: 0.5s;
+    }
+
+    .image_hover::before {
+        background-color: $color_white;
+    }
+}
+
+.button_orange:hover {
+    color: $color_orange !important;
+}
+
+.button_width:hover {
+    color: $color_white;
+
+    span {
+        z-index: 1;
+    }
+
+    .image_hover::after {
+        transform: rotate(45deg);
+    }
+
+    .image_hover::before {
+        border-radius: 0;
+        width: 240px;
+        right: 0;
+        top: -35px;
+        height: 75px;
+    }
+}
+
+.index1 {
+    z-index: 1;
+}
+
+// end everyone
+// start navbar
+body header {
+    z-index: 2;
+}
+
+body header nav .container div ul li .link_size {
     font-size: 18px;
 }
 
-.link_navbar {
+body header nav .container div .ul_container .link_navbar {
     border: 2px solid $color_orange;
     color: $color_orange !important;
     height: 51px;
     transition: 0.5s;
 }
 
-.link_navbar:hover {
+body header nav .container div .ul_container .link_navbar:hover {
     background-color: $color_orange;
     color: $color_white !important;
 }
 
-.li_hover:hover {
+body header nav .container div ul li .li_hover:hover {
     color: $color_orange !important;
 }
 
-.dropdown-toggle::after {
+body header nav .container div ul li .dropdown-toggle::after {
     position: absolute;
     top: 12px;
     right: -20px;
@@ -40,64 +130,447 @@ header {
     transition: 0.3s;
 }
 
-.rotate180::after {
+body header nav .container div ul li .rotate180::after {
     transform: rotate(180deg);
 }
 
-.dropdown-menu {
-    top: 82px !important;
+body header nav .container div ul li .dropdown-menu {
+    border-radius: 0 0 20px 20px;
+    background-color: $background;
+    top: 107%;
 }
 
-.dropdown_left {
+body header nav .container div ul li .dropdown_left {
+    width: 25%;
     left: 52.5% !important;
 }
 
-.navbar-toggler:focus {
+body header nav .container div .navbar-toggler:focus {
     box-shadow: 0 0 0 transparent;
 }
 
+body header nav .container div ul li .div_hover {
+    transition: 0.3s;
+}
+
+body header nav .container div ul li .div_hover:hover {
+    background-color: rgba(255, 255, 255, 0.638);
+}
+
+body header nav .container .row_scroll div div .link_hover {
+    li {
+        width: 50%;
+    }
+
+    .li_100 {
+        width: 100%;
+    }
+}
+
+body .section_main .container .row div div div .span_orange {
+    color: $color_orange;
+}
+
 // end navbar
+// start main
+body .section_main,
+body .section_main::before {
+    height: 100vh;
+}
+
+body .section_main::before {
+    content: "";
+    position: absolute;
+    background-image: url("/images/page_home/images_main/image_main.png");
+    top: 0;
+    background-size: 100% 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+body .section_main .container .row div div div .size_main {
+    font-size: 55px;
+}
+
+body .section_main .container .row div div div .image_network:nth-child(2) {
+    animation: network1 3s infinite;
+}
+
+@keyframes network1 {
+    10% {
+        opacity: 1;
+    }
+}
+
+body .section_main .container .row div div div .image_network:nth-child(3) {
+    animation: network2 3s infinite;
+}
+
+@keyframes network2 {
+    20% {
+        opacity: 1;
+    }
+}
+
+body .section_main .container .row div div div .image_network:nth-child(4) {
+    animation: network3 3s infinite;
+}
+
+@keyframes network3 {
+    30% {
+        opacity: 1;
+    }
+}
+
+body .section_main .container .row div div div .image_network:nth-child(2),
+body .section_main .container .row div div div .image_network:nth-child(3),
+body .section_main .container .row div div div .image_network:nth-child(4) {
+    opacity: 0;
+}
+
+.arraow_bottom {
+    cursor: pointer;
+    bottom: 40px;
+}
+
+.image_animation {
+    animation: image_bottom 1.5s infinite;
+}
+
+@keyframes image_bottom {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+// end main
+// start what
+body section .container div .color_blue {
+    color: $color_blue;
+}
+
+body section .container div .color_tagp {
+    color: $color_ptag;
+}
+
+body section .container .row div .border_what {
+    border: 1px solid $color_blue;
+    height: 200px;
+    transition: 1s;
+}
+
+body section .container .row div .border_what .div_whathover::before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background-color: $color_blue;
+    width: 43px;
+    height: 43px;
+    left: -10px;
+    top: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+body section .container .row div .border_what .div_whathover .image_rotate {
+    width: 24px;
+    transition: 0.5s;
+    transform: translate(0, 0) rotate(0);
+}
+
+body section .container .row div .border_what:hover .image_rotate {
+    transform: rotate(20deg);
+    margin-left: -72px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+body section .container .row div .border_active {
+    color: $color_white;
+    background-color: $color_started;
+}
+
+body section .container .row div .border_active:hover {
+    color: $color_blue !important;
+}
+
+body section .container .row div .border_what .div_before_center::before {
+    background-color: $color_white;
+    width: 43px;
+    height: 43px;
+    left: -10px;
+    top: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+body section .container .row div .border_what .div_before_center::after {
+    content: url("/images/page_home/images_what/image_background.png");
+    mix-blend-mode: exclusion;
+    position: absolute;
+    bottom: -30px;
+    right: -380px;
+}
+
+body section .container .row div .border_active:hover .div_before_center::after {
+    content: "";
+}
+
+body section .container .row div .border_what:hover .div_whathover::before {
+    width: 530px;
+    height: 150%;
+    left: -25px;
+    top: -25px;
+    border-radius: 0;
+}
+
+body section .container .row div .border_what:hover {
+    color: $color_white;
+}
+
+body section .container .row div .border_what div .title_what {
+    width: 85%;
+    font-size: 17px;
+}
+
+// end what
+// start why
+body .section_why {
+    background-color: $color_why;
+}
+
+body .section_why .container .row_gap .div_child div .image_column .hover_why:hover {
+    border: 2px solid $color_orange !important;
+}
+
+body .section_why .container .row_gap .div_child div .image_column #lastImage {
+    display: none;
+}
+
+body .section_why .container .row_gap {
+    row-gap: 30px;
+}
+
+body .section_why .container .row_gap .div_child:nth-child(4):hover {
+    border: 2px solid $color_orange;
+}
+
+body .section_why .container .row_gap .div_child:nth-child(4) {
+    width: 98.3%;
+    background-color: $color_white;
+    border-radius: 30px;
+    padding: 10px 50px;
+    margin-left: 10px;
+
+    .flex-column {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse !important;
+    }
+}
+
+// end why
+// start started
+body section .container .container_background {
+    background-color: $color_blue;
+}
+
+body section .container .container_background::before {
+    content: url("/images/page_image_all/images_started/image_background.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// end started
+// start footer
+body footer {
+    background-color: $color_blue;
+}
+
+body footer::before {
+    content: "";
+    background-image: url("/images/page_image_all/image_footer/image_footer.png");
+    background-size: 100% 500px;
+    width: 100%;
+    height: 500px;
+    bottom: -10px;
+    left: -10px;
+    position: absolute;
+    opacity: 0.2;
+}
+
+body footer .container .row div div .text_footer {
+    font-size: 15px;
+}
+
+body footer .container .row div ul li .link_before::before {
+    content: url("/images/page_image_all/image_footer/icon_arraow.svg");
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+body footer .container .row div ul li .size_footer {
+    font-size: 14px;
+}
+
+body footer .container .row div ul li .before_dot::before {
+    content: "";
+    right: -10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: $color_white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+body footer .container .row div ul li:last-child .before_dot:before {
+    display: none;
+}
+
+// end footer
 // start media
 @media(max-width: 990px) {
-    .image_logo {
+    body header nav .container div a .image_logo {
         width: 106px;
         height: 31.59px;
     }
 
-    .dropdown-toggle::after {
+    body header nav .container div ul li .dropdown-toggle::after {
         content: url("/images/page_image_all/images_navbar/icon_mobile.svg");
         top: 0;
         border-top: 0 solid;
         right: 20px;
     }
 
-    .rotate180::after {
+    body header nav .container div ul li .rotate180::after {
         transform: rotate(90deg);
     }
 
-    .link_navbar {
+    body header nav .container div .ul_container .link_navbar {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 
-    .li_hover:hover {
+    body header nav .container div ul li .li_hover:hover {
         background-color: $color_navbar;
     }
 
-    .li_hover:hover {
+    body header nav .container div ul li .li_hover:hover {
         color: $color_black !important;
     }
 
-    .ul_container {
+    body header nav .container div .ul_container {
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-right: auto;
         margin-left: auto;
     }
 
-    .div_betweenwidth {
-        width: 100%;
+    .width100 {
+        width: 100% !important;
+    }
+
+    body header nav .container .div_betweenwidth {
         border-bottom: 4px solid rgba(0, 0, 0, 0.096);
+    }
+
+    body header nav .container div ul li .dropdown-menu {
+        background-color: transparent;
+    }
+
+    body header nav .container .row_scroll div div .link_hover {
+        li {
+            width: 100%;
+        }
+    }
+
+    body header nav .container .row_scroll {
+        height: 500px;
+    }
+
+    body .section_main,
+    body .section_main::before {
+        padding-top: 80px;
+        height: 50vh;
+    }
+
+    body .section_main::before {
+        background-size: 100% 50vh;
+    }
+
+    body .section_main .container .row div div div .size_main {
+        font-size: 30px;
+    }
+
+    .image_hover::before {
+        top: -15px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .image_hover::after {
+        right: 18px;
+    }
+
+    .button_width {
+        height: auto;
+    }
+
+    body .section_why {
+        background-color: transparent;
+    }
+
+    body .section_why .container .row_gap .div_child div .image_border {
+        border: 1px solid #ccc;
+    }
+
+    body .section_why .container .row_gap .div_child:nth-child(4) {
+        width: 100%;
+        background-color: $color_white;
+        border-radius: 30px;
+        padding: 0 20px;
+        margin-left: 0;
+
+        .flex-column {
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column !important;
+        }
+    }
+
+    body section .container .container_background::before {
+        top: 180px;
+    }
+
+    body footer {
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+@media(max-width: 300px) {
+
+    body .section_main,
+    body .section_main::before {
+        height: 70vh;
+    }
+
+    body .section_main::before {
+        background-size: 100% 70vh;
+    }
+
+    .image_hover::before {
+        background-color: transparent !important;
     }
 }
 
