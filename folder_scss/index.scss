@@ -96,14 +96,42 @@ body {
     z-index: 1;
 }
 
+.color_blue {
+    color: $color_blue;
+}
+
+.size_main {
+    font-size: 55px;
+}
+
+.link_size {
+    font-size: 18px;
+}
+
+.input_color {
+    background-color: $color_input;
+}
+
+.input_color::placeholder {
+    color: $color_black;
+}
+
+.input_submit {
+    background-color: $color_orange;
+}
+
+.span_orange {
+    color: $color_orange;
+}
+
+.title_size {
+    font-size: 36px;
+}
+
 // end everyone
 // start navbar
 body header {
     z-index: 2;
-}
-
-body header nav .container div ul li .link_size {
-    font-size: 18px;
 }
 
 body header nav .container div .ul_container .link_navbar {
@@ -167,10 +195,6 @@ body header nav .container .row_scroll div div .link_hover {
     }
 }
 
-body .section_main .container .row div div div .span_orange {
-    color: $color_orange;
-}
-
 // end navbar
 // start main
 body .section_main,
@@ -186,10 +210,6 @@ body .section_main::before {
     background-size: 100% 100vh;
     width: 100%;
     z-index: -1;
-}
-
-body .section_main .container .row div div div .size_main {
-    font-size: 55px;
 }
 
 body .section_main .container .row div div div .image_network:nth-child(2) {
@@ -251,12 +271,90 @@ body .section_main .container .row div div div .image_network:nth-child(4) {
     }
 }
 
-// end main
-// start what
-body section .container div .color_blue {
-    color: $color_blue;
+body .main_talk {
+    padding-top: 190px;
 }
 
+body .main_talk .container div .from_check[type=checkbox] {
+    width: 56px !important;
+    height: 24px !important;
+    background-color: $color_blue;
+}
+
+body .main_talk .container .form-switch .from_check {
+    background-image: url("/images/page_singin/check.svg");
+    background-position: 4px center;
+    background-size: 16px 16px;
+}
+
+body .main_talk .container .form-switch .from_check:checked {
+    background-position: 34px center;
+    background-image: url("/images/page_singin/checktrue.svg") !important;
+}
+
+body .main_talk .container .form-switch .from_check:focus {
+    background-image: url("/images/page_singin/check.svg");
+}
+
+body .main_talk .container .form-switch .from_check:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+}
+
+body .main_talk .container .container_padding {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+body .main_talk .container .container_padding .row_gap1 {
+    row-gap: 15px;
+}
+
+body .main_talk .container div .font_bold {
+    font-weight: bold;
+}
+
+body .main_talk .container div .font_normal {
+    font-weight: normal;
+}
+
+body .main_talk .container .container_padding .form_flex {
+    display: flex;
+}
+
+body .main_talk .container .container_padding .form_none {
+    display: none;
+}
+
+body .main_talk .container .row form .input_before input {
+    padding-left: 55px;
+}
+
+body .main_talk .container .row form .input_before::before {
+    content: url("/images/page_singin/icon_email.svg");
+    position: absolute;
+    left: 13px;
+    top: 17px;
+}
+
+body .main_talk .container .row form .input_password::before {
+    content: url("/images/page_singin/icon_password.svg");
+}
+
+body .main_talk .container .row form div div .input_check {
+    margin-left: 18px;
+}
+
+body .main_talk .container .row form div div .input_check:checked {
+    border: 0;
+    background-color: $color_orange !important;
+}
+
+body .main_talk .container .row form div div .input_check:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+}
+
+// end main
+// start what
 body section .container div .color_tagp {
     color: $color_ptag;
 }
@@ -555,6 +653,19 @@ body footer .container .row div ul li:last-child .before_dot:before {
 
     body footer {
         border-radius: 30px 30px 0 0;
+    }
+
+    .border_none {
+        border: transparent !important;
+    }
+
+    body .main_talk {
+        padding-top: 90px !important;
+    }
+
+    .main_talk .container .container_padding {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
