@@ -65,13 +65,21 @@ $(document).ready(function () {
     if ($(this).is(":checked")) {
       $("#label1").removeClass("font_bold").addClass("font_normal");
       $("#label2").removeClass("font_normal").addClass("font_bold");
-      $("#form_restaurants").removeClass("form_flex").addClass("form_none");
-      $("#form_distributors").removeClass("form_none").addClass("form_flex");
+      $("#form_restaurants")
+        .removeClass("section_flex")
+        .addClass("section_none");
+      $("#form_distributors")
+        .removeClass("section_none")
+        .addClass("section_flex");
     } else {
       $("#label1").removeClass("font_normal").addClass("font_bold");
       $("#label2").removeClass("font_bold").addClass("font_normal");
-      $("#form_restaurants").removeClass("form_none").addClass("form_flex");
-      $("#form_distributors").removeClass("form_flex").addClass("form_none");
+      $("#form_restaurants")
+        .removeClass("section_none")
+        .addClass("section_flex");
+      $("#form_distributors")
+        .removeClass("section_flex")
+        .addClass("section_none");
     }
   });
 

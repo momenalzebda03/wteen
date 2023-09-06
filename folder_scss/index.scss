@@ -116,8 +116,9 @@ body {
     color: $color_black;
 }
 
+.before_dot1::before,
 .input_submit {
-    background-color: $color_orange;
+    background-color: $color_orange !important;
 }
 
 .span_orange {
@@ -126,6 +127,37 @@ body {
 
 .title_size {
     font-size: 36px;
+}
+
+.before_dot::before {
+    content: "";
+    right: -10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: $color_white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+li:last-child .before_dot:before {
+    display: none;
+}
+
+.color_tagp {
+    color: $color_ptag;
+}
+
+.section_flex {
+    display: flex;
+}
+
+.section_none {
+    display: none;
+}
+
+.row_gap1 {
+    row-gap: 22px;
 }
 
 // end everyone
@@ -212,6 +244,16 @@ body .section_main::before {
     z-index: -1;
 }
 
+body .section_main1 {
+    height: 90vh;
+}
+
+body .section_main1::before {
+    height: 90vh;
+    background-position: center bottom;
+    background-image: url("/images/page_solutions_re/images_main/image_main.png");
+}
+
 body .section_main .container .row div div div .image_network:nth-child(2) {
     animation: network1 3s infinite;
 }
@@ -275,90 +317,78 @@ body .main_talk {
     padding-top: 190px;
 }
 
-body .main_talk .container div .from_check[type=checkbox] {
+.from_check[type=checkbox] {
     width: 56px !important;
     height: 24px !important;
     background-color: $color_blue;
 }
 
-body .main_talk .container .form-switch .from_check {
+body section .container .form-switch .from_check {
     background-image: url("/images/page_singin/check.svg");
     background-position: 4px center;
     background-size: 16px 16px;
 }
 
-body .main_talk .container .form-switch .from_check:checked {
+body section .container .form-switch .from_check:checked {
     background-position: 34px center;
     background-image: url("/images/page_singin/checktrue.svg") !important;
 }
 
-body .main_talk .container .form-switch .from_check:focus {
+body section .container .form-switch .from_check:focus {
     background-image: url("/images/page_singin/check.svg");
 }
 
-body .main_talk .container .form-switch .from_check:focus {
+body section .container .form-switch .from_check:focus {
     box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
 }
 
-body .main_talk .container .container_padding {
+body section .container .container_padding {
     padding-left: 150px;
     padding-right: 150px;
 }
 
-body .main_talk .container .container_padding .row_gap1 {
-    row-gap: 15px;
-}
-
-body .main_talk .container div .font_bold {
+body section .container div .font_bold {
     font-weight: bold;
 }
 
-body .main_talk .container div .font_normal {
+body section .container div .font_normal {
     font-weight: normal;
 }
 
-body .main_talk .container .container_padding .form_flex {
-    display: flex;
-}
-
-body .main_talk .container .container_padding .form_none {
-    display: none;
-}
-
-body .main_talk .container .row form .input_before input {
+body section .container .row form .input_before input {
     padding-left: 55px;
 }
 
-body .main_talk .container .row form .input_before::before {
+body section .container .row form .input_before::before {
     content: url("/images/page_singin/icon_email.svg");
     position: absolute;
     left: 13px;
     top: 17px;
 }
 
-body .main_talk .container .row form .input_password::before {
+body section .container .row form .input_password::before {
     content: url("/images/page_singin/icon_password.svg");
 }
 
-body .main_talk .container .row form div div .input_check {
+body section .container .row form div div .input_check {
     margin-left: 18px;
 }
 
-body .main_talk .container .row form div div .input_check:checked {
+body section .container .row form div div .input_check:checked {
     border: 0;
     background-color: $color_orange !important;
 }
 
-body .main_talk .container .row form div div .input_check:focus {
+body section .container .row form div div .input_check:focus {
     box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+}
+
+body .section_main1 .container div div div .ul_main {
+    background-color: $color_main;
 }
 
 // end main
 // start what
-body section .container div .color_tagp {
-    color: $color_ptag;
-}
-
 body section .container .row div .border_what {
     border: 1px solid $color_blue;
     height: 200px;
@@ -445,11 +475,11 @@ body .section_why {
     background-color: $color_why;
 }
 
-body .section_why .container .row_gap .div_child div .image_column .hover_why:hover {
+body .section_why .container .row_gap div div .image_column .hover_why:hover {
     border: 2px solid $color_orange !important;
 }
 
-body .section_why .container .row_gap .div_child div .image_column #lastImage {
+body .section_why .container .row_gap div div .image_column #lastImage {
     display: none;
 }
 
@@ -457,11 +487,11 @@ body .section_why .container .row_gap {
     row-gap: 30px;
 }
 
-body .section_why .container .row_gap .div_child:nth-child(4):hover {
+body .section_why .container .row_gap div:nth-child(4):hover {
     border: 2px solid $color_orange;
 }
 
-body .section_why .container .row_gap .div_child:nth-child(4) {
+body .section_why .container .row_gap div:nth-child(4) {
     width: 98.3%;
     background-color: $color_white;
     border-radius: 30px;
@@ -489,6 +519,172 @@ body section .container .container_background::before {
 }
 
 // end started
+// start card
+body section .container .row div .div_card {
+    background-color: $color_card;
+}
+
+body section .container .row div .div_card div ul .li_opacity {
+    opacity: 0.3;
+}
+
+body section .container .row div div div div .span_time {
+    color: #51006ab7;
+}
+
+body section .container .row div div div .link_button {
+    background-color: $color_goals;
+}
+
+body section .container .row div .card_overrite::before {
+    content: "";
+    background-image: url("/images/page_pricing/image_background.png");
+    background-size: 108% 107%;
+    width: 108%;
+    height: 107%;
+    position: absolute;
+    top: -14px;
+    left: -20px;
+    z-index: -1;
+}
+
+body section .container .row div .card_overrite {
+    background-color: transparent;
+    margin-top: -30px;
+
+    h2 {
+        color: $color_white;
+    }
+
+    div {
+        div {
+            h2 {
+                font-size: 12px;
+                color: $color_orange;
+            }
+        }
+    }
+
+    div {
+        ul {
+            li {
+                span {
+                    color: $color_white;
+                }
+            }
+        }
+
+        div {
+            span {
+                color: $color_white;
+            }
+        }
+
+        a {
+            color: $color_blue;
+            background-color: $color_white;
+        }
+    }
+}
+
+// end card
+// start order
+body section .container .row div div .flex_horizutel {
+    flex-wrap: wrap;
+
+    li {
+        width: 50%;
+    }
+}
+
+body section .row_child {
+    height: 537px;
+}
+
+body section .row_child {
+    background-color: $color_card;
+
+    .row {
+        flex-direction: row-reverse;
+    }
+
+    div {
+        div {
+            text-align: start !important;
+
+            div {
+                .button_orange:hover {
+                    color: $color_blue !important;
+                }
+
+                a {
+                    background-color: $color_blue;
+                }
+
+                h3 {
+                    color: $color_blue;
+                }
+
+                div {
+                    .image_hover::after {
+                        content: url("/images/page_solutions_re/images_order/icon_blue.svg");
+                    }
+                }
+            }
+        }
+    }
+}
+
+body section .container .row_child div div ul li div .div_center {
+    background-color: $color_orange;
+    width: 20px;
+    height: 20px;
+}
+
+// end order
+// start goals
+body section .container .row_mobile div div div .image_size {
+    width: 45px;
+    height: 47px;
+}
+
+.row_mobile div .div_background {
+    background-color: $color_navbar;
+}
+
+.row_mobile div:nth-child(4n+1) .div_background,
+.row_mobile div:nth-child(4n+0) .div_background {
+    background-color: $color_white;
+}
+
+// end goals
+// start help
+body .section_help .container_row .row div div .text_35 {
+    font-size: 35px;
+}
+
+.container_row {
+    .row_reverse {
+        flex-direction: row-reverse;
+
+        div {
+            div {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+body .section_help .container_row .row div div .hover_small {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+body .section_help .container_row .row div div .hover_small:hover {
+    transform: scale(1);
+}
+
+// end help
 // start footer
 body footer {
     background-color: $color_blue;
@@ -519,21 +715,6 @@ body footer .container .row div ul li .link_before::before {
 
 body footer .container .row div ul li .size_footer {
     font-size: 14px;
-}
-
-body footer .container .row div ul li .before_dot::before {
-    content: "";
-    right: -10px;
-    top: 10px;
-    border-radius: 50%;
-    background-color: $color_white;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-}
-
-body footer .container .row div ul li:last-child .before_dot:before {
-    display: none;
 }
 
 // end footer
@@ -625,15 +806,16 @@ body footer .container .row div ul li:last-child .before_dot:before {
         height: auto;
     }
 
+    body section .row_child:nth-child(even),
     body .section_why {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 
-    body .section_why .container .row_gap .div_child div .image_border {
+    body .section_why .container .row_gap div div .image_border {
         border: 1px solid #ccc;
     }
 
-    body .section_why .container .row_gap .div_child:nth-child(4) {
+    body .section_why .container .row_gap div:nth-child(4) {
         width: 100%;
         background-color: $color_white;
         border-radius: 30px;
@@ -666,6 +848,22 @@ body footer .container .row div ul li:last-child .before_dot:before {
     .main_talk .container .container_padding {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    body section .container .row div .card_overrite {
+        margin-top: 0;
+    }
+
+    .button_respons {
+        width: 45%;
+    }
+
+    body section .row_child {
+        height: auto;
+    }
+
+    .row_mobile {
+        height: 500px;
     }
 }
 
