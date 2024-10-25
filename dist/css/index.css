@@ -11,28 +11,28 @@ body {
   background: #52006A;
 }
 
-.button_width {
+.buttonWidth {
   width: 235px;
   height: 69px;
   color: #52006A;
   background-color: white;
 }
-.button_width .image_hover::after {
-  content: url("/images/page_home/images_main/arraow_button_blue.svg");
+.buttonWidth .imageHover::after {
+  content: url("/assest/images/ArraowButtonBlue.svg");
   transition: 0.5s;
 }
-.button_width .image_hover::before {
+.buttonWidth .imageHover::before {
   background-color: #52006A;
   transition: 0.5s;
 }
 
-.image_hover::after {
+.imageHover::after {
   position: absolute;
   top: -7px;
   right: 25px;
 }
 
-.image_hover::before {
+.imageHover::before {
   content: "";
   background-repeat: no-repeat;
   background-position: center center;
@@ -49,32 +49,32 @@ body {
   border-radius: 50%;
 }
 
-.button_orange {
+.buttonOrange {
   color: white;
   background-color: #FF7600;
 }
-.button_orange .image_hover::after {
-  content: url("/images/page_home/images_main/arraow_button_oragne.svg");
+.buttonOrange .imageHover::after {
+  content: url("/assest/images/ArraowButtonOragne.svg");
   transition: 0.5s;
 }
-.button_orange .image_hover::before {
+.buttonOrange .imageHover::before {
   background-color: white;
 }
 
-.button_orange:hover {
+.buttonOrange:hover {
   color: #FF7600 !important;
 }
 
-.button_width:hover {
+.buttonWidth:hover {
   color: white;
 }
-.button_width:hover span {
+.buttonWidth:hover span {
   z-index: 1;
 }
-.button_width:hover .image_hover::after {
+.buttonWidth:hover .imageHover::after {
   transform: rotate(45deg);
 }
-.button_width:hover .image_hover::before {
+.buttonWidth:hover .imageHover::before {
   border-radius: 0;
   width: 240px;
   right: 0;
@@ -86,44 +86,44 @@ body {
   z-index: 1;
 }
 
-.color_blue {
+.colorBlue {
   color: #52006A;
 }
 
-.size_main {
+.sizeMain {
   font-size: 55px;
 }
 
-.link_size {
+.linkSize {
   font-size: 18px;
 }
 
-.input_color {
+.inputColor {
   background-color: rgba(231, 229, 234, 0.3607843137);
 }
 
-.input_color::-moz-placeholder {
+.inputColor::-moz-placeholder {
   color: black;
 }
 
-.input_color::placeholder {
+.inputColor::placeholder {
   color: black;
 }
 
-.before_dot1::before,
-.input_submit {
+.beforeBot1::before,
+.inputSubmit {
   background-color: #FF7600 !important;
 }
 
-.span_orange {
+.spanOrange {
   color: #FF7600;
 }
 
-.title_size {
+.titleSize {
   font-size: 36px;
 }
 
-.before_dot::before {
+.beforeBot::before {
   content: "";
   right: -10px;
   top: 10px;
@@ -134,23 +134,23 @@ body {
   position: absolute;
 }
 
-li:last-child .before_dot:before {
+li:last-child .beforeBot:before {
   display: none;
 }
 
-.color_tagp {
+.colorTagP {
   color: #5F5F5F;
 }
 
-.section_flex {
+.sectionFlex {
   display: flex;
 }
 
-.section_none {
+.sectionNone {
   display: none;
 }
 
-.row_gap1 {
+.rowGap1 {
   row-gap: 22px;
 }
 
@@ -158,19 +158,19 @@ body header {
   z-index: 2;
 }
 
-body header nav .container div .ul_container .link_navbar {
+body header nav .container div .ulContainer .linkNavbar {
   border: 2px solid #FF7600;
   color: #FF7600 !important;
   height: 51px;
   transition: 0.5s;
 }
 
-body header nav .container div .ul_container .link_navbar:hover {
+body header nav .container div .ulContainer .linkNavbar:hover {
   background-color: #FF7600;
   color: white !important;
 }
 
-body header nav .container div ul li .li_hover:hover {
+body header nav .container div ul li .liHover:hover {
   color: #FF7600 !important;
 }
 
@@ -192,7 +192,7 @@ body header nav .container div ul li .dropdown-menu {
   top: 107%;
 }
 
-body header nav .container div ul li .dropdown_left {
+body header nav .container div ul li .dropDownLeft {
   width: 25%;
   left: 52.5% !important;
 }
@@ -201,47 +201,47 @@ body header nav .container div .navbar-toggler:focus {
   box-shadow: 0 0 0 transparent;
 }
 
-body header nav .container div ul li .div_hover {
+body header nav .container div ul li .divHover {
   transition: 0.3s;
 }
 
-body header nav .container div ul li .div_hover:hover {
+body header nav .container div ul li .divHover:hover {
   background-color: rgba(255, 255, 255, 0.638);
 }
 
-body header nav .container .row_scroll div div .link_hover li {
+body header nav .container .rowScroll div div .linkHover li {
   width: 50%;
 }
-body header nav .container .row_scroll div div .link_hover .li_100 {
+body header nav .container .rowScroll div div .linkHover .li_100 {
   width: 100%;
 }
 
-body .section_main,
-body .section_main::before {
+body .sectionMain,
+body .sectionMain::before {
   height: 100vh;
 }
 
-body .section_main::before {
+body .sectionMain::before {
   content: "";
   position: absolute;
-  background-image: url("/images/page_home/images_main/image_main.png");
+  background-image: url("/assest/images/ImageMain.png");
   top: 0;
   background-size: 100% 100vh;
   width: 100%;
   z-index: -1;
 }
 
-body .section_main1 {
+body .sectionMain1 {
   height: 90vh;
 }
 
-body .section_main1::before {
+body .sectionMain1::before {
   height: 90vh;
   background-position: center bottom;
-  background-image: url("/images/page_solutions_re/images_main/image_main.png");
+  background-image: url("/assest/images/ImageMain.png");
 }
 
-body .section_main .container .row div div div .image_network:nth-child(2) {
+body .sectionMain .container .row div div div .imageNetWork:nth-child(2) {
   animation: network1 3s infinite;
 }
 
@@ -250,7 +250,7 @@ body .section_main .container .row div div div .image_network:nth-child(2) {
     opacity: 1;
   }
 }
-body .section_main .container .row div div div .image_network:nth-child(3) {
+body .sectionMain .container .row div div div .imageNetWork:nth-child(3) {
   animation: network2 3s infinite;
 }
 
@@ -259,7 +259,7 @@ body .section_main .container .row div div div .image_network:nth-child(3) {
     opacity: 1;
   }
 }
-body .section_main .container .row div div div .image_network:nth-child(4) {
+body .sectionMain .container .row div div div .imageNetWork:nth-child(4) {
   animation: network3 3s infinite;
 }
 
@@ -268,22 +268,22 @@ body .section_main .container .row div div div .image_network:nth-child(4) {
     opacity: 1;
   }
 }
-body .section_main .container .row div div div .image_network:nth-child(2),
-body .section_main .container .row div div div .image_network:nth-child(3),
-body .section_main .container .row div div div .image_network:nth-child(4) {
+body .sectionMain .container .row div div div .imageNetWork:nth-child(2),
+body .sectionMain .container .row div div div .imageNetWork:nth-child(3),
+body .sectionMain .container .row div div div .imageNetWork:nth-child(4) {
   opacity: 0;
 }
 
-.arraow_bottom {
+.arraowBottom {
   cursor: pointer;
   bottom: 40px;
 }
 
-.image_animation {
-  animation: image_bottom 1.5s infinite;
+.imageAnimation {
+  animation: imageBottom 1.5s infinite;
 }
 
-@keyframes image_bottom {
+@keyframes imageBottom {
   0% {
     transform: translate(0, -5px);
   }
@@ -294,87 +294,87 @@ body .section_main .container .row div div div .image_network:nth-child(4) {
     transform: translate(0, -5px);
   }
 }
-body .main_talk {
+body .mainTalk {
   padding-top: 190px;
 }
 
-.from_check[type=checkbox] {
+.formCheck[type=checkbox] {
   width: 56px !important;
   height: 24px !important;
   background-color: #52006A;
 }
 
-body section .container .form-switch .from_check {
-  background-image: url("/images/page_singin/check.svg");
+body section .container .form-switch .formCheck {
+  background-image: url("/assest/images/Check.svg");
   background-position: 4px center;
   background-size: 16px 16px;
 }
 
-body section .container .form-switch .from_check:checked {
+body section .container .form-switch .formCheck:checked {
   background-position: 34px center;
-  background-image: url("/images/page_singin/checktrue.svg") !important;
+  background-image: url("/assest/images/CheckTrue.svg") !important;
 }
 
-body section .container .form-switch .from_check:focus {
-  background-image: url("/images/page_singin/check.svg");
+body section .container .form-switch .formCheck:focus {
+  background-image: url("/assest/images/Check.svg");
 }
 
-body section .container .form-switch .from_check:focus {
+body section .container .form-switch .formCheck:focus {
   box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
 }
 
-body section .container .container_padding {
+body section .container .containerPadding {
   padding-left: 150px;
   padding-right: 150px;
 }
 
-body section .container div .font_bold {
+body section .container div .fontBold {
   font-weight: bold;
 }
 
-body section .container div .font_normal {
+body section .container div .fontNormal {
   font-weight: normal;
 }
 
-body section .container .row form .input_before input {
+body section .container .row form .inputBefore input {
   padding-left: 55px;
 }
 
-body section .container .row form .input_before::before {
-  content: url("/images/page_singin/icon_email.svg");
+body section .container .row form .inputBefore::before {
+  content: url("/assest/images/IconEmail.svg");
   position: absolute;
   left: 13px;
   top: 17px;
 }
 
-body section .container .row form .input_password::before {
-  content: url("/images/page_singin/icon_password.svg");
+body section .container .row form .inputPassword::before {
+  content: url("/assest/images/IconPassword.svg");
 }
 
-body section .container .row form div div .input_check {
+body section .container .row form div div .inputCheck {
   margin-left: 18px;
 }
 
-body section .container .row form div div .input_check:checked {
+body section .container .row form div div .inputCheck:checked {
   border: 0;
   background-color: #FF7600 !important;
 }
 
-body section .container .row form div div .input_check:focus {
+body section .container .row form div div .inputCheck:focus {
   box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
 }
 
-body .section_main1 .container div div div .ul_main {
+body .sectionMain1 .container div div div .ulMain {
   background-color: rgba(255, 255, 255, 0.1803921569);
 }
 
-body section .container .row div .border_what {
+body section .container .row div .borderWhat {
   border: 1px solid #52006A;
   height: 200px;
   transition: 1s;
 }
 
-body section .container .row div .border_what .div_whathover::before {
+body section .container .row div .borderWhat .divWhatHover::before {
   content: "";
   border-radius: 50%;
   position: absolute;
@@ -387,29 +387,29 @@ body section .container .row div .border_what .div_whathover::before {
   z-index: 0;
 }
 
-body section .container .row div .border_what .div_whathover .image_rotate {
+body section .container .row div .borderWhat .divWhatHover .imageRotate {
   width: 24px;
   transition: 0.5s;
   transform: translate(0, 0) rotate(0);
 }
 
-body section .container .row div .border_what:hover .image_rotate {
+body section .container .row div .borderWhat:hover .imageRotate {
   transform: rotate(20deg);
   margin-left: -72px;
   width: 100px;
   opacity: 0.5;
 }
 
-body section .container .row div .border_active {
+body section .container .row div .borderActive {
   color: white;
   background-color: #6A0189;
 }
 
-body section .container .row div .border_active:hover {
+body section .container .row div .borderActive:hover {
   color: #52006A !important;
 }
 
-body section .container .row div .border_what .div_before_center::before {
+body section .container .row div .borderWhat .divBeforeCenter::before {
   background-color: white;
   width: 43px;
   height: 43px;
@@ -419,19 +419,19 @@ body section .container .row div .border_what .div_before_center::before {
   z-index: 0;
 }
 
-body section .container .row div .border_what .div_before_center::after {
-  content: url("/images/page_home/images_what/image_background.png");
+body section .container .row div .borderWhat .divBeforeCenter::after {
+  content: url("/assest/images/ImageBackground.png");
   mix-blend-mode: exclusion;
   position: absolute;
   bottom: -30px;
   right: -380px;
 }
 
-body section .container .row div .border_active:hover .div_before_center::after {
+body section .container .row div .borderActive:hover .divBeforeCenter::after {
   content: "";
 }
 
-body section .container .row div .border_what:hover .div_whathover::before {
+body section .container .row div .borderWhat:hover .divWhatHover::before {
   width: 530px;
   height: 150%;
   left: -25px;
@@ -439,78 +439,78 @@ body section .container .row div .border_what:hover .div_whathover::before {
   border-radius: 0;
 }
 
-body section .container .row div .border_what:hover {
+body section .container .row div .borderWhat:hover {
   color: white;
 }
 
-body section .container .row div .border_what div .title_what {
+body section .container .row div .borderWhat div .titleWhat {
   width: 85%;
   font-size: 17px;
 }
 
-body .section_why {
+body .sectionWhy {
   background-color: #eaeaea;
 }
 
-body .section_why .container .row_gap div div .image_column .hover_why:hover {
+body .sectionWhy .container .rowGap div div .imageColumn .hoverWhy:hover {
   border: 2px solid #FF7600 !important;
 }
 
-body .section_why .container .row_gap div div .image_column #lastImage {
+body .sectionWhy .container .rowGap div div .imageColumn #lastImage {
   display: none;
 }
 
-body .section_why .container .row_gap {
+body .sectionWhy .container .rowGap {
   row-gap: 30px;
 }
 
-body .section_why .container .row_gap div:nth-child(4):hover {
+body .sectionWhy .container .rowGap div:nth-child(4):hover {
   border: 2px solid #FF7600;
 }
 
-body .section_why .container .row_gap div:nth-child(4) {
+body .sectionWhy .container .rowGap div:nth-child(4) {
   width: 98.3%;
   background-color: white;
   border-radius: 30px;
   padding: 10px 50px;
   margin-left: 10px;
 }
-body .section_why .container .row_gap div:nth-child(4) .flex-column {
+body .sectionWhy .container .rowGap div:nth-child(4) .flex-column {
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse !important;
 }
 
-body section .container .container_background {
+body section .container .containerBackground {
   background-color: #52006A;
 }
 
-body section .container .container_background::before {
-  content: url("/images/page_image_all/images_started/image_background.png");
+body section .container .containerBackground::before {
+  content: url("/assest/images/ImageBackground.png");
   position: absolute;
   right: 0;
   top: 0;
 }
 
-body section .container .row div .div_card {
+body section .container .row div .divCard {
   background-color: rgba(232, 232, 232, 0.462745098);
 }
 
-body section .container .row div .div_card div ul .li_opacity {
+body section .container .row div .divCard div ul .liOpacity {
   opacity: 0.3;
 }
 
-body section .container .row div div div div .span_time {
+body section .container .row div div div div .spanTime {
   color: rgba(81, 0, 106, 0.7176470588);
 }
 
-body section .container .row div div div .link_button {
+body section .container .row div div div .linkButton {
   background-color: rgba(255, 120, 1, 0.0901960784);
 }
 
-body section .container .row div .card_overrite::before {
+body section .container .row div .cardOverrite::before {
   content: "";
-  background-image: url("/images/page_pricing/image_background.png");
+  background-image: url("/assest/images/ImageBackground.png");
   background-size: 108% 107%;
   width: 108%;
   height: 107%;
@@ -520,98 +520,98 @@ body section .container .row div .card_overrite::before {
   z-index: -1;
 }
 
-body section .container .row div .card_overrite {
+body section .container .row div .cardOverrite {
   background-color: transparent;
   margin-top: -30px;
 }
-body section .container .row div .card_overrite h2 {
+body section .container .row div .cardOverrite h2 {
   color: white;
 }
-body section .container .row div .card_overrite div div h2 {
+body section .container .row div .cardOverrite div div h2 {
   font-size: 12px;
   color: #FF7600;
 }
-body section .container .row div .card_overrite div ul li span {
+body section .container .row div .cardOverrite div ul li span {
   color: white;
 }
-body section .container .row div .card_overrite div div span {
+body section .container .row div .cardOverrite div div span {
   color: white;
 }
-body section .container .row div .card_overrite div a {
+body section .container .row div .cardOverrite div a {
   color: #52006A;
   background-color: white;
 }
 
-body section .container .row div div .flex_horizutel {
+body section .container .row div div .flexHorizutel {
   flex-wrap: wrap;
 }
-body section .container .row div div .flex_horizutel li {
+body section .container .row div div .flexHorizutel li {
   width: 50%;
 }
 
-body section .row_child {
+body section .rowChild {
   height: 537px;
 }
 
-body section .row_child {
+body section .rowChild {
   background-color: rgba(232, 232, 232, 0.462745098);
 }
-body section .row_child .row {
+body section .rowChild .row {
   flex-direction: row-reverse;
 }
-body section .row_child div div {
+body section .rowChild div div {
   text-align: start !important;
 }
-body section .row_child div div div .button_orange:hover {
+body section .rowChild div div div .buttonOrange:hover {
   color: #52006A !important;
 }
-body section .row_child div div div a {
+body section .rowChild div div div a {
   background-color: #52006A;
 }
-body section .row_child div div div h3 {
+body section .rowChild div div div h3 {
   color: #52006A;
 }
-body section .row_child div div div div .image_hover::after {
-  content: url("/images/page_solutions_re/images_order/icon_blue.svg");
+body section .rowChild div div div div .imageHover::after {
+  content: url("/assest/images/IconBlue.svg");
 }
 
-body section .container .row_child div div ul li div .div_center {
+body section .container .rowChild div div ul li div .divCenter {
   background-color: #FF7600;
   width: 20px;
   height: 20px;
 }
 
-body section .container .row_mobile div div div .image_size {
+body section .container .rowMobile div div div .imageSize {
   width: 45px;
   height: 47px;
 }
 
-.row_mobile div .div_background {
+.rowMobile div .divBackground {
   background-color: rgba(245, 178, 53, 0.2039215686);
 }
 
-.row_mobile div:nth-child(4n+1) .div_background,
-.row_mobile div:nth-child(4n+0) .div_background {
+.rowMobile div:nth-child(4n+1) .divBackground,
+.rowMobile div:nth-child(4n+0) .divBackground {
   background-color: white;
 }
 
-body .section_help .container_row .row div div .text_35 {
+body .sectionHelp .containerRow .row div div .text35 {
   font-size: 35px;
 }
 
-.container_row .row_reverse {
+.containerRow .rowReverse {
   flex-direction: row-reverse;
 }
-.container_row .row_reverse div div {
+.containerRow .rowReverse div div {
   text-align: left !important;
 }
 
-body .section_help .container_row .row div div .hover_small {
+body .sectionHelp .containerRow .row div div .hoverSmall {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-body .section_help .container_row .row div div .hover_small:hover {
+body .sectionHelp .containerRow .row div div .hoverSmall:hover {
   transform: scale(1);
 }
 
@@ -621,7 +621,7 @@ body footer {
 
 body footer::before {
   content: "";
-  background-image: url("/images/page_image_all/image_footer/image_footer.png");
+  background-image: url("/assest/images/ImageFooter.png");
   background-size: 100% 500px;
   width: 100%;
   height: 500px;
@@ -631,28 +631,28 @@ body footer::before {
   opacity: 0.2;
 }
 
-body footer .container .row div div .text_footer {
+body footer .container .row div div .textFooter {
   font-size: 15px;
 }
 
-body footer .container .row div ul li .link_before::before {
-  content: url("/images/page_image_all/image_footer/icon_arraow.svg");
+body footer .container .row div ul li .linkBefore::before {
+  content: url("/assest/images/IconArraow.svg");
   position: absolute;
   left: 0;
   top: 2px;
 }
 
-body footer .container .row div ul li .size_footer {
+body footer .container .row div ul li .sizeFooter {
   font-size: 14px;
 }
 
 @media (max-width: 990px) {
-  body header nav .container div a .image_logo {
+  body header nav .container div a .imageLogo {
     width: 106px;
     height: 31.59px;
   }
   body header nav .container div ul li .dropdown-toggle::after {
-    content: url("/images/page_image_all/images_navbar/icon_mobile.svg");
+    content: url("/assest/images/IconMobile.svg");
     top: 0;
     border-top: 0 solid;
     right: 20px;
@@ -660,17 +660,17 @@ body footer .container .row div ul li .size_footer {
   body header nav .container div ul li .rotate180::after {
     transform: rotate(90deg);
   }
-  body header nav .container div .ul_container .link_navbar {
+  body header nav .container div .ulContainer .linkNavbar {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  body header nav .container div ul li .li_hover:hover {
+  body header nav .container div ul li .liHover:hover {
     background-color: rgba(245, 178, 53, 0.2039215686);
   }
-  body header nav .container div ul li .li_hover:hover {
+  body header nav .container div ul li .liHover:hover {
     color: black !important;
   }
-  body header nav .container div .ul_container {
+  body header nav .container div .ulContainer {
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-right: auto;
@@ -679,97 +679,97 @@ body footer .container .row div ul li .size_footer {
   .width100 {
     width: 100% !important;
   }
-  body header nav .container .div_betweenwidth {
+  body header nav .container .divBetweenwidth {
     border-bottom: 4px solid rgba(0, 0, 0, 0.096);
   }
   body header nav .container div ul li .dropdown-menu {
     background-color: transparent;
   }
-  body header nav .container .row_scroll div div .link_hover li {
+  body header nav .container .rowScroll div div .linkHover li {
     width: 100%;
   }
-  body header nav .container .row_scroll {
+  body header nav .container .rowScroll {
     height: 500px;
   }
-  body .section_main,
-  body .section_main::before {
+  body .sectionMain,
+  body .sectionMain::before {
     padding-top: 80px;
     height: 50vh;
   }
-  body .section_main::before {
+  body .sectionMain::before {
     background-size: 100% 50vh;
   }
-  body .section_main .container .row div div div .size_main {
+  body .sectionMain .container .row div div div .sizeMain {
     font-size: 30px;
   }
-  .image_hover::before {
+  .imageHover::before {
     top: -15px;
     width: 31px;
     height: 31px;
   }
-  .image_hover::after {
+  .imageHover::after {
     right: 18px;
   }
-  .button_width {
+  .buttonWidth {
     height: auto;
   }
-  body section .row_child:nth-child(even),
-  body .section_why {
+  body section .rowChild:nth-child(even),
+  body .sectionWhy {
     background-color: transparent !important;
   }
-  body .section_why .container .row_gap div div .image_border {
+  body .sectionWhy .container .rowGap div div .imageBorder {
     border: 1px solid #ccc;
   }
-  body .section_why .container .row_gap div:nth-child(4) {
+  body .sectionWhy .container .rowGap div:nth-child(4) {
     width: 100%;
     background-color: white;
     border-radius: 30px;
     padding: 0 20px;
     margin-left: 0;
   }
-  body .section_why .container .row_gap div:nth-child(4) .flex-column {
+  body .sectionWhy .container .rowGap div:nth-child(4) .flex-column {
     align-items: center;
     justify-content: space-between;
     flex-direction: column !important;
   }
-  body section .container .container_background::before {
+  body section .container .containerBackground::before {
     top: 180px;
   }
   body footer {
     border-radius: 30px 30px 0 0;
   }
-  .border_none {
+  .borderNone {
     border: transparent !important;
   }
-  body .main_talk {
+  body .mainTalk {
     padding-top: 90px !important;
   }
-  .main_talk .container .container_padding {
+  .mainTalk {
     padding-left: 0;
     padding-right: 0;
   }
-  body section .container .row div .card_overrite {
+  body section .container .row div .cardOverrite {
     margin-top: 0;
   }
-  .button_respons {
+  .buttonRespons {
     width: 45%;
   }
-  body section .row_child {
+  body section .rowChild {
     height: auto;
   }
-  .row_mobile {
+  .rowMobile {
     height: 500px;
   }
 }
 @media (max-width: 300px) {
-  body .section_main,
-  body .section_main::before {
+  body .sectionMain,
+  body .sectionMain::before {
     height: 70vh;
   }
-  body .section_main::before {
+  body .sectionMain::before {
     background-size: 100% 70vh;
   }
-  .image_hover::before {
+  .imageHover::before {
     background-color: transparent !important;
   }
 }/*# sourceMappingURL=index.css.map */

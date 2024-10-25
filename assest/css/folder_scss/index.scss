@@ -1,0 +1,886 @@
+@import "color";
+
+// start everyone
+body {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorBlue;
+}
+
+.buttonWidth {
+    width: 235px;
+    height: 69px;
+    color: $colorBlue;
+    background-color: $colorWhite;
+
+    .imageHover::after {
+        content: url("/assest/images/ArraowButtonBlue.svg");
+        transition: 0.5s;
+    }
+
+    .imageHover::before {
+        background-color: $colorBlue;
+        transition: 0.5s;
+    }
+}
+
+.imageHover::after {
+    position: absolute;
+    top: -7px;
+    right: 25px;
+}
+
+.imageHover::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.buttonOrange {
+    color: $colorWhite;
+    background-color: $colorOrange;
+
+    .imageHover::after {
+        content: url("/assest/images/ArraowButtonOragne.svg");
+        transition: 0.5s;
+    }
+
+    .imageHover::before {
+        background-color: $colorWhite;
+    }
+}
+
+.buttonOrange:hover {
+    color: $colorOrange !important;
+}
+
+.buttonWidth:hover {
+    color: $colorWhite;
+
+    span {
+        z-index: 1;
+    }
+
+    .imageHover::after {
+        transform: rotate(45deg);
+    }
+
+    .imageHover::before {
+        border-radius: 0;
+        width: 240px;
+        right: 0;
+        top: -35px;
+        height: 75px;
+    }
+}
+
+.index1 {
+    z-index: 1;
+}
+
+.colorBlue {
+    color: $colorBlue;
+}
+
+.sizeMain {
+    font-size: 55px;
+}
+
+.linkSize {
+    font-size: 18px;
+}
+
+.inputColor {
+    background-color: $colorInput;
+}
+
+.inputColor::placeholder {
+    color: $colorBlack;
+}
+
+.beforeBot1::before,
+.inputSubmit {
+    background-color: $colorOrange !important;
+}
+
+.spanOrange {
+    color: $colorOrange;
+}
+
+.titleSize {
+    font-size: 36px;
+}
+
+.beforeBot::before {
+    content: "";
+    right: -10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: $colorWhite;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+li:last-child .beforeBot:before {
+    display: none;
+}
+
+.colorTagP {
+    color: $colorPtag;
+}
+
+.sectionFlex {
+    display: flex;
+}
+
+.sectionNone {
+    display: none;
+}
+
+.rowGap1 {
+    row-gap: 22px;
+}
+
+// end everyone
+// start navbar
+body header {
+    z-index: 2;
+}
+
+body header nav .container div .ulContainer .linkNavbar {
+    border: 2px solid $colorOrange;
+    color: $colorOrange !important;
+    height: 51px;
+    transition: 0.5s;
+}
+
+body header nav .container div .ulContainer .linkNavbar:hover {
+    background-color: $colorOrange;
+    color: $colorWhite !important;
+}
+
+body header nav .container div ul li .liHover:hover {
+    color: $colorOrange !important;
+}
+
+body header nav .container div ul li .dropdown-toggle::after {
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+body header nav .container div ul li .rotate180::after {
+    transform: rotate(180deg);
+}
+
+body header nav .container div ul li .dropdown-menu {
+    border-radius: 0 0 20px 20px;
+    background-color: $background;
+    top: 107%;
+}
+
+body header nav .container div ul li .dropDownLeft {
+    width: 25%;
+    left: 52.5% !important;
+}
+
+body header nav .container div .navbar-toggler:focus {
+    box-shadow: 0 0 0 transparent;
+}
+
+body header nav .container div ul li .divHover {
+    transition: 0.3s;
+}
+
+body header nav .container div ul li .divHover:hover {
+    background-color: rgba(255, 255, 255, 0.638);
+}
+
+body header nav .container .rowScroll div div .linkHover {
+    li {
+        width: 50%;
+    }
+
+    .li_100 {
+        width: 100%;
+    }
+}
+
+// end navbar
+// start main
+body .sectionMain,
+body .sectionMain::before {
+    height: 100vh;
+}
+
+body .sectionMain::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assest/images/ImageMain.png");
+    top: 0;
+    background-size: 100% 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+body .sectionMain1 {
+    height: 90vh;
+}
+
+body .sectionMain1::before {
+    height: 90vh;
+    background-position: center bottom;
+    background-image: url("/assest/images/ImageMain.png");
+}
+
+body .sectionMain .container .row div div div .imageNetWork:nth-child(2) {
+    animation: network1 3s infinite;
+}
+
+@keyframes network1 {
+    10% {
+        opacity: 1;
+    }
+}
+
+body .sectionMain .container .row div div div .imageNetWork:nth-child(3) {
+    animation: network2 3s infinite;
+}
+
+@keyframes network2 {
+    20% {
+        opacity: 1;
+    }
+}
+
+body .sectionMain .container .row div div div .imageNetWork:nth-child(4) {
+    animation: network3 3s infinite;
+}
+
+@keyframes network3 {
+    30% {
+        opacity: 1;
+    }
+}
+
+body .sectionMain .container .row div div div .imageNetWork:nth-child(2),
+body .sectionMain .container .row div div div .imageNetWork:nth-child(3),
+body .sectionMain .container .row div div div .imageNetWork:nth-child(4) {
+    opacity: 0;
+}
+
+.arraowBottom {
+    cursor: pointer;
+    bottom: 40px;
+}
+
+.imageAnimation {
+    animation: imageBottom 1.5s infinite;
+}
+
+@keyframes imageBottom {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+body .mainTalk {
+    padding-top: 190px;
+}
+
+.formCheck[type=checkbox] {
+    width: 56px !important;
+    height: 24px !important;
+    background-color: $colorBlue;
+}
+
+body section .container .form-switch .formCheck {
+    background-image: url("/assest/images/Check.svg");
+    background-position: 4px center;
+    background-size: 16px 16px;
+}
+
+body section .container .form-switch .formCheck:checked {
+    background-position: 34px center;
+    background-image: url("/assest/images/CheckTrue.svg") !important;
+}
+
+body section .container .form-switch .formCheck:focus {
+    background-image: url("/assest/images/Check.svg");
+}
+
+body section .container .form-switch .formCheck:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+}
+
+body section .container .containerPadding {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+body section .container div .fontBold {
+    font-weight: bold;
+}
+
+body section .container div .fontNormal {
+    font-weight: normal;
+}
+
+body section .container .row form .inputBefore input {
+    padding-left: 55px;
+}
+
+body section .container .row form .inputBefore::before {
+    content: url("/assest/images/IconEmail.svg");
+    position: absolute;
+    left: 13px;
+    top: 17px;
+}
+
+body section .container .row form .inputPassword::before {
+    content: url("/assest/images/IconPassword.svg");
+}
+
+body section .container .row form div div .inputCheck {
+    margin-left: 18px;
+}
+
+body section .container .row form div div .inputCheck:checked {
+    border: 0;
+    background-color: $colorOrange !important;
+}
+
+body section .container .row form div div .inputCheck:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+}
+
+body .sectionMain1 .container div div div .ulMain {
+    background-color: $colorMain;
+}
+
+// end main
+// start what
+body section .container .row div .borderWhat {
+    border: 1px solid $colorBlue;
+    height: 200px;
+    transition: 1s;
+}
+
+body section .container .row div .borderWhat .divWhatHover::before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background-color: $colorBlue;
+    width: 43px;
+    height: 43px;
+    left: -10px;
+    top: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+body section .container .row div .borderWhat .divWhatHover .imageRotate {
+    width: 24px;
+    transition: 0.5s;
+    transform: translate(0, 0) rotate(0);
+}
+
+body section .container .row div .borderWhat:hover .imageRotate {
+    transform: rotate(20deg);
+    margin-left: -72px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+body section .container .row div .borderActive {
+    color: $colorWhite;
+    background-color: $colorStarted;
+}
+
+body section .container .row div .borderActive:hover {
+    color: $colorBlue !important;
+}
+
+body section .container .row div .borderWhat .divBeforeCenter::before {
+    background-color: $colorWhite;
+    width: 43px;
+    height: 43px;
+    left: -10px;
+    top: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+body section .container .row div .borderWhat .divBeforeCenter::after {
+    content: url("/assest/images/ImageBackground.png");
+    mix-blend-mode: exclusion;
+    position: absolute;
+    bottom: -30px;
+    right: -380px;
+}
+
+body section .container .row div .borderActive:hover .divBeforeCenter::after {
+    content: "";
+}
+
+body section .container .row div .borderWhat:hover .divWhatHover::before {
+    width: 530px;
+    height: 150%;
+    left: -25px;
+    top: -25px;
+    border-radius: 0;
+}
+
+body section .container .row div .borderWhat:hover {
+    color: $colorWhite;
+}
+
+body section .container .row div .borderWhat div .titleWhat {
+    width: 85%;
+    font-size: 17px;
+}
+
+// end what
+// start why
+body .sectionWhy {
+    background-color: $colorWhy;
+}
+
+body .sectionWhy .container .rowGap div div .imageColumn .hoverWhy:hover {
+    border: 2px solid $colorOrange !important;
+}
+
+body .sectionWhy .container .rowGap div div .imageColumn #lastImage {
+    display: none;
+}
+
+body .sectionWhy .container .rowGap {
+    row-gap: 30px;
+}
+
+body .sectionWhy .container .rowGap div:nth-child(4):hover {
+    border: 2px solid $colorOrange;
+}
+
+body .sectionWhy .container .rowGap div:nth-child(4) {
+    width: 98.3%;
+    background-color: $colorWhite;
+    border-radius: 30px;
+    padding: 10px 50px;
+    margin-left: 10px;
+
+    .flex-column {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse !important;
+    }
+}
+
+// end why
+// start started
+body section .container .containerBackground {
+    background-color: $colorBlue;
+}
+
+body section .container .containerBackground::before {
+    content: url("/assest/images/ImageBackground.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// end started
+// start card
+body section .container .row div .divCard {
+    background-color: $colorCard;
+}
+
+body section .container .row div .divCard div ul .liOpacity {
+    opacity: 0.3;
+}
+
+body section .container .row div div div div .spanTime {
+    color: #51006ab7;
+}
+
+body section .container .row div div div .linkButton {
+    background-color: $colorGoals;
+}
+
+body section .container .row div .cardOverrite::before {
+    content: "";
+    background-image: url("/assest/images/ImageBackground.png");
+    background-size: 108% 107%;
+    width: 108%;
+    height: 107%;
+    position: absolute;
+    top: -14px;
+    left: -20px;
+    z-index: -1;
+}
+
+body section .container .row div .cardOverrite {
+    background-color: transparent;
+    margin-top: -30px;
+
+    h2 {
+        color: $colorWhite;
+    }
+
+    div {
+        div {
+            h2 {
+                font-size: 12px;
+                color: $colorOrange;
+            }
+        }
+    }
+
+    div {
+        ul {
+            li {
+                span {
+                    color: $colorWhite;
+                }
+            }
+        }
+
+        div {
+            span {
+                color: $colorWhite;
+            }
+        }
+
+        a {
+            color: $colorBlue;
+            background-color: $colorWhite;
+        }
+    }
+}
+
+// end card
+// start order
+body section .container .row div div .flexHorizutel {
+    flex-wrap: wrap;
+
+    li {
+        width: 50%;
+    }
+}
+
+body section .rowChild {
+    height: 537px;
+}
+
+body section .rowChild {
+    background-color: $colorCard;
+
+    .row {
+        flex-direction: row-reverse;
+    }
+
+    div {
+        div {
+            text-align: start !important;
+
+            div {
+                .buttonOrange:hover {
+                    color: $colorBlue !important;
+                }
+
+                a {
+                    background-color: $colorBlue;
+                }
+
+                h3 {
+                    color: $colorBlue;
+                }
+
+                div {
+                    .imageHover::after {
+                        content: url("/assest/images/IconBlue.svg");
+                    }
+                }
+            }
+        }
+    }
+}
+
+body section .container .rowChild div div ul li div .divCenter {
+    background-color: $colorOrange;
+    width: 20px;
+    height: 20px;
+}
+
+// end order
+// start goals
+body section .container .rowMobile div div div .imageSize {
+    width: 45px;
+    height: 47px;
+}
+
+.rowMobile div .divBackground {
+    background-color: $colorNavbar;
+}
+
+.rowMobile div:nth-child(4n+1) .divBackground,
+.rowMobile div:nth-child(4n+0) .divBackground {
+    background-color: $colorWhite;
+}
+
+// end goals
+// start help
+body .sectionHelp .containerRow .row div div .text35 {
+    font-size: 35px;
+}
+
+.containerRow {
+    .rowReverse {
+        flex-direction: row-reverse;
+
+        div {
+            div {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+body .sectionHelp .containerRow .row div div .hoverSmall {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+body .sectionHelp .containerRow .row div div .hoverSmall:hover {
+    transform: scale(1);
+}
+
+// end help
+// start footer
+body footer {
+    background-color: $colorBlue;
+}
+
+body footer::before {
+    content: "";
+    background-image: url("/assest/images/ImageFooter.png");
+    background-size: 100% 500px;
+    width: 100%;
+    height: 500px;
+    bottom: -10px;
+    left: -10px;
+    position: absolute;
+    opacity: 0.2;
+}
+
+body footer .container .row div div .textFooter {
+    font-size: 15px;
+}
+
+body footer .container .row div ul li .linkBefore::before {
+    content: url("/assest/images/IconArraow.svg");
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+body footer .container .row div ul li .sizeFooter {
+    font-size: 14px;
+}
+
+// end footer
+// start media
+@media(max-width: 990px) {
+    body header nav .container div a .imageLogo {
+        width: 106px;
+        height: 31.59px;
+    }
+
+    body header nav .container div ul li .dropdown-toggle::after {
+        content: url("/assest/images/IconMobile.svg");
+        top: 0;
+        border-top: 0 solid;
+        right: 20px;
+    }
+
+    body header nav .container div ul li .rotate180::after {
+        transform: rotate(90deg);
+    }
+
+    body header nav .container div .ulContainer .linkNavbar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    body header nav .container div ul li .liHover:hover {
+        background-color: $colorNavbar;
+    }
+
+    body header nav .container div ul li .liHover:hover {
+        color: $colorBlack !important;
+    }
+
+    body header nav .container div .ulContainer {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .width100 {
+        width: 100% !important;
+    }
+
+    body header nav .container .divBetweenwidth {
+        border-bottom: 4px solid rgba(0, 0, 0, 0.096);
+    }
+
+    body header nav .container div ul li .dropdown-menu {
+        background-color: transparent;
+    }
+
+    body header nav .container .rowScroll div div .linkHover {
+        li {
+            width: 100%;
+        }
+    }
+
+    body header nav .container .rowScroll {
+        height: 500px;
+    }
+
+    body .sectionMain,
+    body .sectionMain::before {
+        padding-top: 80px;
+        height: 50vh;
+    }
+
+    body .sectionMain::before {
+        background-size: 100% 50vh;
+    }
+
+    body .sectionMain .container .row div div div .sizeMain {
+        font-size: 30px;
+    }
+
+    .imageHover::before {
+        top: -15px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .imageHover::after {
+        right: 18px;
+    }
+
+    .buttonWidth {
+        height: auto;
+    }
+
+    body section .rowChild:nth-child(even),
+    body .sectionWhy {
+        background-color: transparent !important;
+    }
+
+    body .sectionWhy .container .rowGap div div .imageBorder {
+        border: 1px solid #ccc;
+    }
+
+    body .sectionWhy .container .rowGap div:nth-child(4) {
+        width: 100%;
+        background-color: $colorWhite;
+        border-radius: 30px;
+        padding: 0 20px;
+        margin-left: 0;
+
+        .flex-column {
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column !important;
+        }
+    }
+
+    body section .container .containerBackground::before {
+        top: 180px;
+    }
+
+    body footer {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .borderNone {
+        border: transparent !important;
+    }
+
+    body .mainTalk {
+        padding-top: 90px !important;
+    }
+
+    .mainTalk {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    body section .container .row div .cardOverrite {
+        margin-top: 0;
+    }
+
+    .buttonRespons {
+        width: 45%;
+    }
+
+    body section .rowChild {
+        height: auto;
+    }
+
+    .rowMobile {
+        height: 500px;
+    }
+}
+
+@media(max-width: 300px) {
+
+    body .sectionMain,
+    body .sectionMain::before {
+        height: 70vh;
+    }
+
+    body .sectionMain::before {
+        background-size: 100% 70vh;
+    }
+
+    .imageHover::before {
+        background-color: transparent !important;
+    }
+}
+
+// end media
